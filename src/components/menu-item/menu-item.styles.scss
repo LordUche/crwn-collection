@@ -7,11 +7,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-position: center;
-	background-size: cover;
+	overflow: hidden;
 
 	&.large {
 		height: 380px;
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		& .background-image {
+			transform: scale(1.1);
+			transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+		}
+
+		& .content {
+			opacity: 0.9;
+		}
 	}
 
 	.content {
@@ -22,18 +34,28 @@
 		align-items: center;
 		justify-content: center;
 		border: 1px solid black;
+		background-color: white;
+		opacity: 0.7;
+		position: absolute;
 
 		.title {
 			margin: 0 0 6px;
 			font-weight: bold;
 			font-size: 22px;
-      color: #4a4a4a;
-      text-transform: uppercase;
+			color: #4a4a4a;
+			text-transform: uppercase;
 		}
 
 		.subtitle {
 			font-weight: lighter;
 			font-size: 16px;
 		}
+	}
+
+	.background-image {
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
 	}
 }
