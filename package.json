@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/firebase": "^3.2.1",
     "@types/node-sass": "^4.11.0",
     "firebase": "^6.3.4",
     "node-sass": "^4.12.0",
