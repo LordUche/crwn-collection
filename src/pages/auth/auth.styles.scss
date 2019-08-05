@@ -1,6 +1,7 @@
 .auth {
-	display: flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 850px;
+  max-width: 850px;
   margin: 30px auto;
 }
