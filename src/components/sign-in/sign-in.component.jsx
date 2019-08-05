@@ -10,7 +10,7 @@ class SignIn extends Component {
 	handleSubmit = async e => {
 		e.preventDefault();
 		const { email, password } = this.state;
-		
+
 		try {
 			await auth.signInWithEmailAndPassword(email, password);
 			this.setState({ email: '', password: '' });
@@ -36,7 +36,7 @@ class SignIn extends Component {
 					<FormInput
 						type="email"
 						name="email"
-						label="email"
+						label="Email"
 						value={email}
 						handleChange={this.handleChange}
 						required
@@ -44,7 +44,7 @@ class SignIn extends Component {
 					<FormInput
 						type="password"
 						name="password"
-						label="password"
+						label="Password"
 						value={password}
 						handleChange={this.handleChange}
 						required
