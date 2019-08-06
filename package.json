@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/node-sass": "^4.11.0",
+    "@types/redux-persist": "^4.3.1",
     "@types/reselect": "^2.2.0",
     "firebase": "^6.3.4",
     "node-sass": "^4.12.0",
@@ -14,6 +15,7 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
     "reselect": "^4.0.0"
   },
   "scripts": {
